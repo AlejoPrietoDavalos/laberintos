@@ -1,7 +1,8 @@
+from typing import List, Tuple
+from PIL import Image
+
 import matplotlib.pyplot as plt
 import numpy as np
-from PIL import Image
-from typing import List, Tuple
 
 def animate_maze_solution(maze: np.ndarray, start: Tuple[int, int], end: Tuple[int, int], result: List[Tuple[int, int]], output_filename="maze_solution.gif"):
     frames = []
