@@ -34,4 +34,4 @@ def animate_maze_solution(maze: np.ndarray, start: Tuple[int, int], end: Tuple[i
         plt.close(fig)  # Liberar memoria
 
     # Guardar como GIF
-    frames[0].save(output_filename, save_all=True, append_images=frames[1:], duration=300, loop=0)
+    frames[0].save(output_filename, save_all=True, append_images=frames[1:], duration=50, loop=0)
