@@ -91,8 +91,7 @@ def solve_by_left_hand_rule(
     point_first = get_point_first(maze, last_ij)
     result.append(point_first)
 
-    sarlanga = 0
-    while sarlanga < 1000 and not is_solved(last_ij, end):
+    while not is_solved(last_ij, end):
         # Obtenemos la dirección actual de movimiento.
         versor = get_versor(result)
         last_ij = result[-1]
@@ -107,5 +106,4 @@ def solve_by_left_hand_rule(
                 result.append(point_to_try)
                 break
             # Continúa si ese versor es una pared.
-        sarlanga += 1
     return result
