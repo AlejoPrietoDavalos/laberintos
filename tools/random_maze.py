@@ -1,7 +1,6 @@
-from typing import Tuple
-import random
+from typing import Tuple, List
 from collections import deque
-from typing import List
+import random
 
 def create_random_maze(dim: int) -> Tuple[List[List[int]], Tuple[int, int], Tuple[int, int]]:
     # Crear una cuadrícula llena de paredes (0) usando listas anidadas
